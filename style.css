@@ -1,1 +1,159 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+
+}
+
+header img {
+  width: 50px;
+  border-radius: 50%;
+  
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#h11{
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  margin-left: 40px;
+}
+
+
+header nav a:hover {
+  color: #ffcc00; /* yellow on hover */
+}
+
+header nav .nav-logo img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#hero {
+  background: url('https://as2.ftcdn.net/v2/jpg/03/86/48/19/1000_F_386481983_JuTLXI7LeyEKF0J2GQ2gxSpX3k9udXIn.jpg') center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.search-box {
+  display: grid;
+  gap: 10px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.input-group input {
+  width: 250px;
+  padding: 10px 10px 10px 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-box button {
+  background: #ff9900;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Book Button Styling */
+.book-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #28a745; /* green on hover */
+  transform: scale(1.05);
+}
+
+/* Ride Results */
+.results {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.ride-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.ride-card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
 
