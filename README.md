@@ -1,4 +1,4 @@
-# QuickRide-compare
+
 import { useState } from "react"; import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; import Header from "./components/Header"; import Hero from "./components/Hero"; import RideResults from "./components/Results"; import LoginModal from "./components/LoginModal"; import About from "./pages/About"; import Contact from "./pages/Contact"; // --- NEW --- Import the new BookingPage component import BookingPage from "./pages/BookingPage"; import RoutesData from "./components/RoutesData"; import "./App.css";
 
 function AppContent() { const [rides, setRides] = useState([]); const [sortOption, setSortOption] = useState("price"); const [showModal, setShowModal] = useState(false); const [isLoggedIn, setIsLoggedIn] = useState(false); const [currentUser, setCurrentUser] = useState(null); const navigate = useNavigate();
